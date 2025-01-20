@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projektportal - Neues Projekt</title>
+    <meta charset="UTF-8">
+    <meta name="language" content="German">
+    <meta name="description" content="Verwaltung von Projekten">
+    <meta name="author" content="Alexander Lauruhn">
+    <link rel="stylesheet" media="all" href="common.css">
+    <link rel="stylesheet" media="all" href="create.css">
+    <script src="common.js"></script>
+    <script src="create.js"></script>
+  </head>
+  <body>
+ <header id="top">
+      <picture>
+        <source media="(min-width: 1920px)" srcset="header1920x200.png">
+        <source media="(min-width: 1280px)" srcset="header1280x133.png">
+        <source media="(min-width:  640px)" srcset="header640x67.png">
+        <img src="header320x34.png" style="width: 100%"/>
+      </picture>
+      <nav>
+        <a href="index.html"><img src="home.svg" style="width: 16px">Start</a>
+        <a href="overview.html"><img src="overview.svg" style="width: 16px">Übersicht</a>
+        <a href="create.html"><img src="create.svg" style="width: 16px">neues Projekt</a>
+      </nav>
+      <div class="login">
+        <h2>Login</h2>
+        <form id="loginform">
+          <label for="username">Benutzername:</label><br>
+          <input type="text" id="username"/><br>
+          <label for="password">Passwort:</label><br>
+          <input type="password" id="password"/><br>
+          <input type="submit" id="login" value="Login"/>
+        </form>
+      </div>
+    </header>
+
+
+    <h1>Projekt</h1>
+    <div>
+      <form id="createform">
+        <div class="project-head">
+	   <input type="file" title="Logo" name="Logo" size="100">
+ 	   <label for="startdate"/>ProjektName:<br>
+        <input id="title" name="title" type="text"><br>
+        </div>
+        <label for="startdate"/>Startdatum:<br>
+        <input id="startdate" name="startdate" type="date"><br>
+        <label for="enddate"/>Enddatum:<br>
+        <input id="enddate" name="enddate" type="date"><br>
+        <label for="short_description"/>Kurzbeschreibung:<br>
+        <textarea id="short_description" name="short_description" rows="3" cols="50">
+Hier steht ein kurzer beschreibender Text zum Projekt.
+        </textarea><br>
+        <label for="long_description"/>Langbeschreibung:<br>
+        <textarea id="long_description" name="long_description" rows="10" cols="50">
+An dieser Stelle könnte dann eine ausführliche Beschreibung für das Projekt stehen. Es 
+ist genug Platz für alle wichtigen Informationen, die das Projekt betreffen.
+        </textarea><br>
+        <label for="first_milestone"/>Erstes Projektziel:<br>
+        <input id="first_milestone" name="first_milestone" type="text"><br>
+        <label for="second_milestone"/>Zweites Projektziel:<br>
+        <input id="second_milestone" name="second_milestone" type="text"><br>
+
+        <input type="submit" value="Projekt anlegen">
+      </form>
+    </div>
+    <p></p>
+
+  <footer>
+      <a href="register.html">Registrieren</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="dsgvo.html">Datenschutzerklärung</a>
+      <a href="#top" class="top-link">Zurück zum Anfang</a>
+    </footer>
+  </body>
+</html>

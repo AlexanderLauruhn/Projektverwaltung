@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projektportal - Projektseite</title>
+    <meta charset="UTF-8">
+    <meta name="language" content="German">
+    <meta name="description" content="Projektportal">
+    <meta name="author" content="Alexander Lauruhn">
+    <link rel="stylesheet" media="all" href="common.css">
+    <link rel="stylesheet" media="all" href="project.css">
+    <script src="common.js"></script>
+    <script src="project.js"></script>
+    <script>
+      function opensecondpage() {
+        var inputText = document.getElementById("textfeld").value;
+        window.open("comment.html?text=" + encodeURIComponent(inputText));
+      }
+  </script>
+  </head>
+  <body>
+   <header id="top">
+      <picture>
+        <source media="(min-width: 1920px)" srcset="header1920x200.png">
+        <source media="(min-width: 1280px)" srcset="header1280x133.png">
+        <source media="(min-width:  640px)" srcset="header640x67.png">
+        <img src="header320x34.png" style="width: 100%"/>
+      </picture>
+      <nav>
+        <a href="index.html"><img src="home.svg" style="width: 16px">Start</a>
+        <a href="overview.html"><img src="overview.svg" style="width: 16px">Übersicht</a>
+        <a href="create.html"><img src="create.svg" style="width: 16px">neues Projekt</a>
+      </nav>
+      <div class="login">
+        <h2>Login</h2>
+        <form id="loginform">
+          <label for="username">Benutzername:</label><br>
+          <input type="text" id="username"/><br>  <script>
+    function openSecondPage() {
+      var inputText = document.getElementById("textfeld").value;
+      window.open("comment.html?text=" + encodeURIComponent(inputText));
+    }
+  </script>  <script>
+    function openSecondPage() {
+      var inputText = document.getElementById("textfeld").value;
+      window.open("comment.html?text=" + encodeURIComponent(inputText));
+    }
+  </script>
+          <label for="password">Passwort:</label><br>
+          <input type="password" id="password"/><br>
+          <input type="submit" id="login" value="Login"/>
+        </form>
+      </div>
+    </header>
+
+
+    <h1 class="project">Projekt</h1>
+    <div>
+      <div class="project-head">
+        <img id="logo" src="garten.png">
+        <h2 id="title">Garten</h2>
+        <div id="leader">Max Mustermann</div>
+      </div>
+      <strong>Startdatum:</strong> 1. April 2023<br>
+      <strong>Enddatum:</strong> 15. Oktober 2023
+      <h2 id="short_description">Kurzbeschreibung</h2>
+      <p id="short_description_text">
+        Blumen gießen, Rasenmähen
+      </p>
+      <h2 id="long_description">Langbeschreibung</h2>
+      <p id="long_description_text">
+        Der Rasen sollte, wenn es nicht geregnet hat, möglichst kurz gemäht werden.
+	  Benzin für den Rasenmäher steht neben dem Mäher. Der Rasenschnitt ist auf dem Kompost zu entsorgen.
+	  Ansonsten müssen die Blumen noch gegossen werden. Die Hortensien brauchen extra viel Wasser.
+	  Wasser kann aus der Regentonne entnommen werden.
+      </p>
+      <h2>Projektziele</h2>
+      <ol>
+        <li>gepflegter Rasen</li>
+        <li>viele bunte Blumen</li>
+      </ol>
+      <div class="toc">
+        <h2>Inhalt</h2>
+        <ul>
+          <li><a href="#logo">Logo</a></li>
+          <li><a href="#title">Titel</a></li>
+          <li><a href="#short_description">Kurzbeschreibung</a></li>
+          <li id="toc_description"><a href="#long_description">Langbeschreibung</a></li>
+          <li><a href="#comments">Kommentare</a></li>
+        </ul>
+      </div>
+    <h2 id="comments">Kommentare</h2>
+    <div>
+      <p id="lastcomment"></p>  
+		<input type="text" id="textfeld" placeholder="Kommentare eingeben">
+ 		<button onclick="openSecondPage()">Kommentare sehen</button>
+ 		<li></li>
+    </div>
+    </div>
+
+
+
+    <footer>
+      <a href="register.html">Registrieren</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="dsgvo.html">Datenschutzerklärung</a>
+      <a href="#top" class="top-link">Zurück zum Anfang</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startseite</title>
+    <meta charset="UTF-8">
+    <meta name="language" content="German">
+    <meta name="description" content="Projektportal">
+    <meta name="author" content="Alexander Lauruhn">
+    <link rel="stylesheet" media="all" href="common.css">
+    <link rel="stylesheet" media="all" href="index.css">
+    <script src="common.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+  <header id="top">
+      <picture>
+        <source media="(min-width: 1920px)" srcset="header1920x200.png">
+        <source media="(min-width: 1280px)" srcset="header1280x133.png">
+        <source media="(min-width:  640px)" srcset="header640x67.png">
+        <img src="header320x34.png" style="width: 100%"/>
+      </picture>
+      <nav>
+        <a href="index.html"><img src="home.svg" style="width: 16px">Start</a>
+        <a href="overview.html"><img src="overview.svg" style="width: 16px">Übersicht</a>
+        <a href="create.html"><img src="create.svg" style="width: 16px">neues Projekt</a>
+      </nav>
+      <div class="login">
+        <h2>Login</h2>
+        <form id="loginform">
+          <label for="username">Benutzername:</label><br>
+          <input type="text" id="username"/><br>
+          <label for="password">Passwort:</label><br>
+          <input type="password" id="password"/><br>
+          <input type="submit" id="login" value="Login"/>
+        </form>
+      </div>
+    </header>
+
+
+    <h1 class="welcome1">Willkommen</h1>
+    <div class="description">
+      <h2>Beschreibung der Seite</h2>
+      <p>Diese Seite ist die Startseite der Projektverwaltung und bettet ein Video ein.</p>
+      <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        WELCOME_VIDEO_PLAYBACK_NOT_SUPPORTED
+      </video>
+    </div>
+
+    <div class="projects">
+      <h2>Neue Projekte</h2>
+      <table id="overviewtable" align="center" border="1" width="90%">
+        <tr>
+          <th>Name</th>
+          <th>Datum</th>
+          <th>Kurzbeschreibung</th>
+        </tr>
+        <tr>
+          <th>Garten</th>
+          <th>1.6.2023</th>
+          <th>Blumen gießen und Rasen mähen</th>
+        </tr>
+        <tr>
+          <th>Küche</th>
+          <th>2.6.2023</th>
+          <th>Kühlschrank reinigen</th>
+        </tr>
+      </table>
+
+    </div>
+    
+    <footer>
+      <a href="register.html">Registrieren</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="dsgvo.html">Datenschutzerklärung</a>
+      <a href="#top" class="top-link">Zurück zum Anfang</a>
+    </footer>
+  </body>
+</html>

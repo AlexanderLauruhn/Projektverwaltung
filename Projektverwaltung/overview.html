@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projektportal - Projektübersicht</title>
+    <meta charset="UTF-8">
+    <meta name="language" content="German">
+    <meta name="description" content="Projektportal">
+    <meta name="author" content="Alexander Lauruhn">
+    <link rel="stylesheet" media="all" href="overview.css">
+    <link rel="stylesheet" media="all" href="common.css">
+    <script src="common.js"></script>
+    <script src="overview.js"></script>
+  </head>
+  <body>
+    <header id="top">
+      <picture>
+        <source media="(min-width: 1920px)" srcset="header1920x200.png">
+        <source media="(min-width: 1280px)" srcset="header1280x133.png">
+        <source media="(min-width:  640px)" srcset="header640x67.png">
+        <img src="header320x34.png" style="width: 100%"/>
+      </picture>
+      <nav>
+        <a href="index.html"><img src="home.svg" style="width: 16px">Start</a>
+        <a href="overview.html"><img src="overview.svg" style="width: 16px">Übersicht</a>
+        <a href="create.html"><img src="create.svg" style="width: 16px">neues Projekt</a>
+      </nav>
+      <div class="login">
+        <h2>Login</h2>
+        <form id="loginform">
+          <label for="username">Benutzername:</label><br>
+          <input type="text" id="username"/><br>
+          <label for="password">Passwort:</label><br>
+          <input type="password" id="password"/><br>
+          <input type="submit" id="login" value="Login"/>
+        </form>
+      </div>
+    </header>
+
+    <h1>Projektübersicht</h1>
+    <div>
+	<ul>
+  		<li><a href="garten.html">Garten</a></li>
+  		<li><a href="kueche.html">Küche</a></li>
+  		<li><a href="badezimmer.html">Badezimmer</a></li>
+	</ul>
+
+      <table id="overviewtable">
+        <tr>
+          <th>Name</th>
+          <th>Beschreibung</th>
+          <th>Datum</th>
+          <th>Actions</th>
+        </tr>
+        <tfoot>
+          <tr>
+            <td>
+              <select multiple="multiple">
+                <option value="ada">option1</option>
+                <option value="ada">option2</option>
+                <option value="ada">option3</option>
+                <option value="ada">option4</option>
+              </select>
+            </td>
+            <td>
+            </td>
+            <td>
+              <input type="date"/><br>
+              <input type="date"/>
+            </td>
+            <td>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <button class="filter">Filter</button>
+      <button>Neues Projekt anlegen</button>
+    </div>
+    <p></p>
+    
+    <footer>
+      <a href="register.html">Registrieren</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="dsgvo.html">Datenschutzerklärung</a>
+      <a href="#top" class="top-link">Zurück zum Anfang</a>
+    </footer>
+  </body>
+</html>
